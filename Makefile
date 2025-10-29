@@ -3,7 +3,7 @@
 servidor:
 	gcc -w servidor.c -o servidor
 	clear
-	./servidor /home/pedro/servidor/
+	./servidor /home/pedro/sv/Servidor-e-cliente-HTTP/arquivos
 
 cliente:
 	gcc cliente.c -o cliente

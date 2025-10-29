@@ -1,4 +1,5 @@
 # Servidor e Cliente HTTP em C
+Pedro Henrique Assis Dornelas - 2023008219
 
 Este código implementa um servidor HTTP simples em linguagem C que serve arquivos de um diretório, além de um cliente capaz de baixá-los.
 
