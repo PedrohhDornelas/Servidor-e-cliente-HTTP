@@ -10,11 +10,13 @@ Funcionalidades:
     - Trata URLs com espaços
     - Compatível com qualquer navegador comum
 
-Para usar o servidor, basta digitar
-    
-    make servidor
-
 Para usar o cliente, basta digitar
 
     make cliente
     ./cliente <URL>
+
+Para usar o servidor, basta digitar
+    
+    make servidor
+
+Note que é possível alterar o diretório do servidor através do M    akefile.
