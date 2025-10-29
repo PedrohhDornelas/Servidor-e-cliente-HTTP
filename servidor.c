@@ -48,7 +48,7 @@ void enviaConteudo(int socketCliente, const char *caminhoArquivo) { // envia arq
 
     FILE *f = fopen(caminhoArquivo, "rb"); // abre binario para poder aceitar qualquer tipo
     if(!f) {
-        const char *naoEncontrado = "HTTP/1.1 404 Not Found\r\n\r\nFile not found";
+        const char *naoEncontrado = "HTTP/1.1 404 Not Found\r\n\r\nFile not found (404)";
         write(socketCliente, naoEncontrado, strlen(naoEncontrado)); // envia mensagem de erro
         return;
     }
@@ -122,7 +122,7 @@ void trataGET(int novoSocketCliente, const char *diretorioRaiz, const char *cami
             }
         }
     } else {
-        const char *naoENcontrado = "HTTP/1.1 404 Not Found\r\n\r\nFile not found"; 
+        const char *naoENcontrado = "HTTP/1.1 404 Not Found\r\n\r\nFile not found (404)"; 
         write(novoSocketCliente, naoENcontrado, strlen(naoENcontrado)); // envia mensagem de erro
     }
 }
